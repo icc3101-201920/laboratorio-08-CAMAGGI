@@ -1,12 +1,12 @@
-﻿using Laboratorio_6_OOP_201902.Enums;
+﻿using Laboratorio_7_OOP_201902.Enums;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Laboratorio_6_OOP_201902.Cards
+namespace Laboratorio_7_OOP_201902.Cards
 {
     [Serializable]
-    public abstract class Card : ICharacteristics
+    public abstract class Card
     {
         //Atributos
         protected string name;
@@ -53,9 +53,6 @@ namespace Laboratorio_6_OOP_201902.Cards
                 this.effect = value;
             }
         }
-        public List<string> GetCharacteristics()
-        {
-            return new List<string>();
-        }
+        
     }
 }

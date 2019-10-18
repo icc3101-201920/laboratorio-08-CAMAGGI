@@ -1,12 +1,14 @@
-﻿using Laboratorio_6_OOP_201902.Cards;
+﻿using Laboratorio_7_OOP_201902.Cards;
+using Laboratorio_7_OOP_201902.Enums;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
-namespace Laboratorio_6_OOP_201902
+namespace Laboratorio_7_OOP_201902
 {
     [Serializable]
-    public class Deck : ICharacteristics
+    public class Deck
     {
 
         private List<Card> cards;
@@ -27,6 +29,8 @@ namespace Laboratorio_6_OOP_201902
             cards.RemoveAt(cardId);
         }
 
+        
+
         public void Shuffle()
         {
             Random random = new Random();
@@ -40,9 +44,6 @@ namespace Laboratorio_6_OOP_201902
                 cards[n] = value;
             }
         }
-        public List<string> GetCharacteristics()
-        {
-            return new List<string>();
-        }
+
     }
 }

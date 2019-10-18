@@ -1,9 +1,9 @@
-﻿using Laboratorio_6_OOP_201902.Enums;
+﻿using Laboratorio_7_OOP_201902.Enums;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Laboratorio_6_OOP_201902.Cards
+namespace Laboratorio_7_OOP_201902.Cards
 {
     public class SpecialCard : Card
     {
@@ -31,6 +31,6 @@ namespace Laboratorio_6_OOP_201902.Cards
             BuffType = null;
         }
 
-
+        
     }
 }

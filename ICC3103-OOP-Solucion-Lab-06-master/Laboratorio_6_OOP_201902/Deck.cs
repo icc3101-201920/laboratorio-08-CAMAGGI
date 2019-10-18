@@ -6,7 +6,7 @@ using System.Text;
 namespace Laboratorio_6_OOP_201902
 {
     [Serializable]
-    public class Deck
+    public class Deck : ICharacteristics
     {
 
         private List<Card> cards;
@@ -40,6 +40,9 @@ namespace Laboratorio_6_OOP_201902
                 cards[n] = value;
             }
         }
-
+        public List<string> GetCharacteristics()
+        {
+            return new List<string>();
+        }
     }
 }
